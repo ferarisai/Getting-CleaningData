@@ -65,8 +65,8 @@ dt$Acceleration <- factor(x %*% y, labels=c(NA, "Body", "Gravity"))
 x <- matrix(c(grepthis("mean()"), grepthis("std()")), ncol=nrow(y))
 dt$Variable <- factor(x %*% y, labels=c("Mean", "SD"))
 ## Features with 1 category
-dt$Jerk <- factor(grepthis("Jerk"), labels=c("No", "Yes"))
-dt$Magnitude <- factor(grepthis("Mag"), labels=c("No", "Yes"))
+dt$Jerk <- factor(grepthis("Jerk"), labels=c("NA", "Yes"))
+dt$Magnitude <- factor(grepthis("Mag"), labels=c("NA", "Yes"))
 ## Features with 3 categories
 n <- 3
 y <- matrix(seq(1, n), nrow=n)
